@@ -1,0 +1,199 @@
+@font-face {
+	font-family: Roboto;
+	src: url(font.ttf);
+}
+body {
+	font-family: sans-serif;
+	background-color: #171717;
+	color: #eee;
+}
+
+* {
+	font-family:Roboto,sans-serif;
+	box-sizing: border-box;
+}
+h1 {
+	color: #eee;
+	margin-bottom: 30px;
+}
+.container {
+	/* padding: 20px; */
+	margin: 0 auto;
+	max-width: 900px;
+	text-align: center;
+}
+
+#skillList {
+	padding-inline-start: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	grid-gap: 5px;
+	margin-top: 10px;
+}
+
+.skill {
+	position: relative;
+	list-style-type: none;
+	background-color: #2b2b2b;
+	color: #fff;
+	border-radius: 3px;
+	padding: 10px 20px;
+	padding-right: 55px;
+	min-height: 100px;
+	height: max-content;
+	/* display: grid; */
+	/* grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "name image"
+        "house image"; */
+	text-align: left;
+
+	background-size: 48px 48px;
+	background-position: right 10px top 10px;
+	background-repeat: no-repeat;
+}
+
+.skill > h3 {
+	/* grid-area: name; */
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+.skill > .description {
+	/* grid-area: name; */
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+.skill > .images > img {
+	height: 30px;
+	width: 30px;
+}
+/* .skill > .endless::before {
+    content: "";
+	display: inline-block;
+	width: 22px;
+	height: 15px;
+	background-size: 19px;
+	background-repeat: no-repeat;
+	background-image: url("images/icon-infinitode-1-logo.png");
+} */
+
+.skill > p {
+	margin: 0;
+	/* margin-top: -18px; */
+}
+.skill.hide {
+	display: none !important;
+}
+
+#searchBar {
+	width: 100%;
+	height: 32px;
+	border-radius: 3px;
+	border: 1px solid #eaeaea;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+#contact {
+	position: absolute;
+	transform: translateY(-20px);
+	right: 0;
+}
+#contact > * {
+	font-size: 20px;
+}
+.discord:before {
+	content: "";
+	transform: translateY(20px);
+	display: inline-block;
+	width: 36px;
+	height: 30px;
+	background-size: 31px;
+	background-repeat: no-repeat;
+	background-image: url("images/icon-colored-discord.png");
+}
+#version, #gameVersion {
+	font-size: 12px;
+	text-align: right;
+	padding-right: 3px;
+}
+#searchWrapper {
+	position: relative;
+}
+
+#searchWrapper::after {
+	content: "🔍";
+	position: absolute;
+	top: 7px;
+	right: 15px;
+}
+
+.collapsible:before {
+	display: inline-block;
+	background-image: url("images/icon-triangle-bottom-hollow.png");
+	content: "";
+	width: 20px;
+	height: 17px;
+	background-repeat: no-repeat;
+	background-size: 20px;
+}
+.active:before {
+	transform: rotateX(180deg);
+	background-position-y: -5px;
+}
+.collapsible {
+	background-color: #2b2b2b;
+	color: #fff;
+	cursor: pointer;
+	padding: 3px;
+	padding-bottom: 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	/* position: absolute;
+	bottom: 0; */
+}
+
+.active {
+	background-color: #252525;
+}
+
+.active,
+.collapsible:hover {
+	color: #9b9b9b;
+}
+/* .content, .skill{
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.1s;
+} */
+.content {
+	/* padding: 0 18px; */
+	display: none;
+	overflow: hidden;
+	background-color: #252525;
+}
+.level, .effect, .price {
+	margin:0;
+}
+.level {
+	font-size:15px;
+	margin-top:3px;
+}
+.effect {
+	color: #81C784;
+}
+.price {
+	color: #E91E63;
+}
+.effect, .price {
+	font-size:13px;
+	padding-left: 8px;
+}
+.level.total, .level.totalEndless {
+	font-size:20px;
+	margin-top:4px;
+}
+.effect.total, .effect.totalEndless {
+	font-size:15px;
+	margin-top:1px;
+}
