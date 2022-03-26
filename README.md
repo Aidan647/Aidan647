@@ -1,6 +1,5 @@
 ### Hi there 👋
 
-- 🔭 I’m currently working on [Waifu2x v2](https://github.com/Aidan647/waifu2x) discord bot _01.12.2021_
 - 📫 How to reach me: [discord server link](https://discord.gg/VB95zQwfH9)
 - 💬 Ask me about anything
 
