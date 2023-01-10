@@ -1,6 +1,5 @@
 ### Hi there 👋
 
-- 📫 How to reach me: [discord server link](https://discord.gg/VB95zQwfH9)
 - 💬 Ask me about anything
 
 <!--
